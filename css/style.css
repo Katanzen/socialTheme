@@ -1,0 +1,14 @@
+#loginAvatar {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  margin-left: 31%;
+}
+
+#inner-home {
+  padding-top: 150px;
+}
+.card {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  background-color: #f7f7f7;
+}

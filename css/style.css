@@ -6,9 +6,35 @@
 }
 
 #inner-home {
-  padding-top: 150px;
+  background-image: url(/img/homePage.jpg);
+  opacity: 0.9;
+
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  min-height: 700px;
 }
 .card {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   background-color: #f7f7f7;
+  padding: 1rem 1rem 1rem 1rem;
+  -moz-user-select: none;
+  user-select: none;
+}
+.navbar {
+  background-color: rgba(216, 229, 230, 0.7);
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#brand-second {
+  font-weight: bold;
+  color: rgb(88, 102, 102);
+}
+.signin-button:hover {
+  background-color: crimson;
+}
+#explore-head {
+  background-color: rgb(137, 140, 146);
 }

@@ -6,9 +6,8 @@
 }
 
 #inner-home {
-  background-image: url(/img/homePage.jpg);
+  background-image: url(../img/homePage.jpg);
   opacity: 0.9;
-
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;

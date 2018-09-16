@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Mehmet TURAN">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous"> -->
     <link rel="stylesheet" href="localfiles/css/bootstrap.min.css">
@@ -15,10 +16,10 @@
     <title>SocialNetwork</title>
 </head>
 
-<body>
+<body id="home">
 
-
-    <div class="navbar navbar-expand-sm navbar-light fixed-top">
+    <!-- Navbar -->
+    <div id="home-navbar" class="navbar navbar-expand-sm navbar-light fixed-top">
         <div class="container">
             <a href="index.html" class="navbar-brand">Social<span id="brand-second">Network</span></a>
 
@@ -30,21 +31,22 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Explore</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Create</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Share</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#explore-head" class="nav-link">Explore</a></li>
+                    <li class="nav-item"><a href="#share-head" class="nav-link">Share</a></li>
+                    <li class="nav-item"><a href="/pages/create.html" class="nav-link">Create</a></li>
                 </ul>
 
             </div>
         </div>
     </div>
 
+    <!-- Root for sections -->
     <div class="" id="inner-home">
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-8 d-md-block d-none">
                     <h1 class="display-4 mb-0" style="color:rgb(10, 10, 10);">Best
                         place to
                         find your friends from
@@ -91,46 +93,166 @@
         </div>
 
     </div>
+
+    <!-- Explore section header -->
     <section id="explore-head">
         <header class="text-center">
             <h1 class="display-4">Explore</h1>
-            <p class="p-4 mb-0">
+            <p class="lead mb-0">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum voluptate eos beatae magni maxime
                 adipisci reprehenderit mollitia eum! Tempore eum saepe vitae odit dicta nesciunt commodi perspiciatis
-                voluptas. Iusto!Fuga iusto ad dolorem optio nobis eius quod. Facilis esse illo unde nemo dolorem
-                necessitatibus?
+                voluptas.
             </p>
             <button class="btn btn-primary mb-1">Find Out More</button>
 
         </header>
     </section>
-    <section>
-        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi soluta sint, quia quasi qui facere
-            voluptate laborum maxime culpa vero numquam adipisci fugit quos perspiciatis harum tempora illum non
-            reiciendis?
-            Esse unde officiis corporis at soluta! Modi debitis deserunt, excepturi exercitationem recusandae
-            repudiandae commodi libero hic doloribus nisi iusto laboriosam, eos tenetur unde officiis ratione eligendi
-            fugit at voluptatibus a?
-            Quae, eos, accusamus minima quos similique eius explicabo itaque reiciendis placeat minus, aut obcaecati
-            ratione magnam voluptatem. Voluptatum laudantium expedita ratione similique ducimus eos voluptate, hic,
-            reprehenderit laboriosam praesentium aliquam!
-            Quasi quaerat magnam labore illo ad in, illum nesciunt. Eaque numquam error quasi in aliquam ab dolor,
-            repellendus eius reprehenderit a unde enim aliquid dolorum. Magni tenetur sit ipsum aut?
-            Sequi accusantium qui repellendus quibusdam cumque voluptatibus excepturi aut deleniti deserunt facere
-            eaque maiores illum, neque natus, ducimus fuga fugit omnis, quos error. Sed, mollitia at rem id aliquam
-            atque.</div>
+
+    <!-- Explore section -->
+    <section class="explore py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-fluid rounded-circle" src="/img/explore-section1.jpg" alt="A hand holding an iphone">
+                </div>
+                <div class="col-md-6">
+                    <h3>Explore & Connect</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint officia veritatis rem eaque
+                        aperiam quisk.</p>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Share section header -->
+    <section id="share-head" class="bg-info">
+        <header class="text-center">
+            <h1 class="display-4">Share</h1>
+            <p class="lead mb-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum voluptate eos beatae magni maxime
+                adipisci reprehenderit mollitia eum! Tempore eum saepe vitae odit dicta nesciunt commodi perspiciatis
+                voluptas.
+            </p>
+            <button class="btn btn-outline-light my-2">Find Out More</button>
+    </section>
+
+    <!-- Share section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Share What You Create</h3>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                    <div class="py-2">
+                        <i class="fas fa-check fa-2x p-0 m-0" style="color:rgb(66,139,202)">
+                        </i>
+                        <p class="d-inline p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, non
+                            tempore
+                            reprehenderit, eius alias quis officiis optio, praesentium. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="/img/share-section1.jpg" class="rounded-circle img-fluid" alt="Friends around a fire in beach">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Homepage footer -->
+    <footer id="home-footer" class="text-center py-1">
+        <a href="index.html" class="navbar-brand last-logo">Social<span id="brand-second">Network</span></a>
+        <p class="text-center pr-3 text-small text-white mb-1">Copyright © <span id="year">2018</span></p>
+        <button class="btn btn-sm btn-secondary mr-3 mt-0 mb-0" data-toggle="modal" data-target="#aboutus-modal">About
+            Us</button>
+    </footer>
+
+    <!-- Modal for about us -->
+    <div class="modal" id="aboutus-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact</h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                </div>
+                <div class="modal-body">
+                    <p class="d-block"><span style="font-weight:bold;">Email: </span>turan-mehmet@windowslive.com</p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="popper.min.js"></script>
+    <script src="/localfiles/popper.min.js"></script>
     <script src="localfiles/js/bootstrap.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="localfiles/jquery-3.3.1.min.js">\x3C/script>');
+        window.jQuery ||
+            document.write('<script src="localfiles/jquery-3.3.1.min.js">\x3C/script>');
+    </script>
+    <script>
 
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
 
+        // Init Scrollspy
+        $('body').scrollspy({ target: '#home-navbar' });
+
+        // Smooth Scrolling
+        $("#home-navbar a").on('click', function (event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    window.location.hash = hash;
+                });
+            }
+        });
 
     </script>
-
 </body>
 
 </html>
